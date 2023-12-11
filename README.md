@@ -141,3 +141,9 @@ ros2 launch isaac_ros_visual_slam isaac_ros_visual_slam_realsense.launch.py
   b- `/visual_slam/tracking/vo_pose` - to see the `Pose`.
   
   c- `/yolov8_processed_image` - To see `Yolov8` detection. 
+
+4- Running `rviz2` with `Visual Slam` and `Yolov8` detevction may cause to slow the system. So, it is better to record a `ros2 bag`
+
+```
+ros2 bag record -o Vslam_and_Yolov8_12 /yolov8_processed_image /visual_slam/tracking/vo_path /visual_slam/tracking/vo_pose /tf_static /tf
+```
