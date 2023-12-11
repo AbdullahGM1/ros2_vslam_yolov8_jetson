@@ -135,6 +135,9 @@ ros2 launch isaac_ros_visual_slam isaac_ros_visual_slam_realsense.launch.py
 ```
 
 3- Run `rviz2` we can subscribe to the following topics:
+
   a- `/visual_slam/tracking/vo_path` - to see the `Slam` path.
+  
   b- `/visual_slam/tracking/vo_pose` - to see the `Pose`.
+  
   c- `/yolov8_processed_image` - To see `Yolov8` detection. 
